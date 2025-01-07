@@ -1,0 +1,29 @@
+What is HashTable ?
+Hash tables are data structures
+we commonly use map/dict all these are using hash table data structure
+
+A Hash Table transforms a key into an integer index using a hash function,
+and the index will decide where to store the key/value pair in memory:
+[
+    0: [key, value],
+    1: [key, value]
+]
+
+
+index collision ? 
+is a problem when to two keys generate similar index so we handle this using nested arrays for one hashed index
+[
+    0: [
+        [key, value],
+        [key, value]
+    ],
+    1: [
+        [k, v],
+        [k, v]
+    ]
+]
+
+Reference link: 
+https://www.freecodecamp.org/news/javascript-hash-table-associative-array-hashing-in-js/
+
+it's commonly used because of it's fast search insertion and deletion
